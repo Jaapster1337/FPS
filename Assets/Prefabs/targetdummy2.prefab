@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 65744097973352944}
   m_Layer: 0
   m_Name: targetdummy2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,13 +36,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1743023820500600}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -3.0343683, y: 1.9604007, z: 19.934336}
   m_LocalScale: {x: 0.15459168, y: 1, z: 1.3192862}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!23 &23251877817867366
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -56,7 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 56b06cae4e0930b4d9de0933ac5a868b, type: 2}
+  - {fileID: 0}
   - {fileID: 2100000, guid: 4a342b66b2a36d548b424e26b857f2f3, type: 2}
   - {fileID: 2100000, guid: 8f87828a94a736147a85dfbb002a7243, type: 2}
   m_StaticBatchInfo:

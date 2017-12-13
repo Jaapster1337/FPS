@@ -5,7 +5,7 @@ using UnityEngine;
 public class FP_Shooting : MonoBehaviour {
 
 	public GameObject bullet_prefab;
-	float bulletImpulse = 100f;
+	float bulletImpulse = 40f;
 
 	// Use this for initialization
 	void Start () {
@@ -16,8 +16,8 @@ public class FP_Shooting : MonoBehaviour {
 	void Update () {
 		if (Input.GetButtonDown("Fire1")) {
 			Camera cam = Camera.main;
-			GameObject thebullet = (GameObject)Instantiate(bullet_prefab,cam.transform.position,cam.transform.rotation);
-			thebullet.rigidbody.AddForce(cam.transform.forward, bulletImpulse,ForceMode.Impulse);
+			GameObject thebullet = (GameObject)Instantiate(bullet_prefab,cam.transform.position+cam.transform.forward,cam.transform.rotation);
+			thebullet.GetComponent<Rigidbody>().AddForce(cam.transform.forward*bulletImpulse,ForceMode.Impulse);
 		}
 
 		
