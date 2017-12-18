@@ -35,6 +35,8 @@ public class PerformAttack : MonoBehaviour {
 
 				if(debrisPrefab != null){
 					Instantiate(debrisPrefab, hitPoint, Quaternion.identity);
+					//effectSpawn = new Vector3 (col.transform.position.x, col.transform.position.y, col.transform.position.z);
+					Instantiate(sparkEffect, hitPoint, Quaternion.identity);
 				}
 			}
 		}
@@ -45,8 +47,7 @@ public class PerformAttack : MonoBehaviour {
 		if (col.gameObject.tag == "Enemy") {
 			//Debug.Log(col);
 			print(col.transform.position);
-			effectSpawn = new Vector3 (col.transform.position.x, col.transform.position.y, col.transform.position.z);
-			Instantiate(sparkEffect, effectSpawn, Quaternion.identity);
+
 			Destroy(gameObject);
 		}
 
